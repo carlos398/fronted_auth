@@ -1,0 +1,8 @@
+.DashContainer{
+    width: 95vw;
+    height: 95vh;
+    background-color: antiquewhite;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}

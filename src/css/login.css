@@ -1,0 +1,133 @@
+.LoginContainer{
+    box-sizing: border-box;
+    width: 90%;
+    max-width:900px;
+    height: 600px;
+    display: grid;
+    background-color: rgb(176, 212, 243);
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid rgba(161, 159, 159, 0.288);
+    border-radius: 15px ;
+    overflow: hidden;
+}
+
+.LoginLogo{
+    width:500px;
+    max-width: 600px;
+    height: 600px;
+    background-image: url('../images/loguito.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transform: scale(.8);
+    transition: 1s;
+}
+
+.LoginLogo:hover{
+    transition:2s;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+
+.FormContainer{
+    width: 100%;
+    max-width:400px;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(245, 199, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.FormContainer form{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.FormContainer form div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: rgb(114, 109, 116);
+}
+
+.FormContainer form div label {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.FormContainer form div input {
+    width: 270px;
+    padding: 10px;
+    padding-left: 5px;
+    font-weight: 600;
+    outline: none;
+    background-color: rgb(245, 199, 131);
+    color: rgb(114, 109, 116);
+    border:none;
+    border-bottom: 2px solid rgb(84, 169, 190);
+    transition: .2s;
+}
+
+.FormContainer form div input:focus-visible{
+    transition: .3s;
+    color: rgb(51, 50, 50);
+    font-size: 1.2em;
+}
+
+.FormContainer form  button{
+    width: 270px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+    border: 2px solid rgb(70, 149, 168);
+    border-radius: 15px;
+    color: rgb(51, 50, 50);
+    background-color: rgb(84, 169, 190);
+    cursor: pointer;
+    transition: .7s;
+}
+
+.FormContainer form  button:hover{
+    transition:.7s;
+    transform: scale(.9);
+    box-shadow: 3px 3px 11px rgb(70, 149, 168);
+}
+
+.RegisterContainer{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.RegisterContainer div {
+    padding: 6px;
+    font-size: .9em;
+    color: rgba(51, 50, 50, 0.692);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.RegisterContainer div:hover {
+    transition: .8s;
+    color: rgba(51, 50, 50);
+    background-color: rgba(84, 169, 190);
+    border: 3px solid rgba(70, 148, 168);
+}

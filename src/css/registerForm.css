@@ -1,0 +1,90 @@
+.RegisterForm { 
+    width: 430px;
+    height: 650px;
+    background-color: rgba(181, 216, 204);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.RegisterForm h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(114, 109, 116);
+}
+
+.RegisterForm div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: rgb(114, 109, 116);
+}
+
+.RegisterForm div label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.RegisterForm div input {
+    width: 320px;
+    padding: 10px;
+    padding-left: 5px;
+    font-weight: 600;
+    outline: none;
+    border:none;
+    background-color: rgba(181, 216, 204, 0.5);
+    color: rgb(114, 109, 116);
+    border-bottom: 2px solid rgb(84, 169, 190);
+    transition: .2s;
+}
+
+.RegisterForm div input:focus-visible{
+    transition: .3s;
+    color: rgb(51, 50, 50);
+    font-size: 1.1em;
+}
+
+.RegisterForm .RegisterBtn {
+    margin-top:20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(84, 169, 190);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.RegisterForm .RegisterBtn:hover {
+    background-color: rgb(84, 169, 190);
+    color: rgb(245, 201, 120);
+    box-shadow: 2px 2px 10px rgb(84, 169, 190);
+}
+
+
+.RegisterForm .CloseRegister {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(235, 172, 172);
+    transition: .7s;
+}
+
+.RegisterForm .CloseRegister:hover {
+    transition: .7s;
+    background-color: rgb(245, 137, 137);
+    transform: scale(1.1) rotate(180deg);
+}
